@@ -1,0 +1,30 @@
+//Print the Pattern_5...
+#include<stdio.h>
+int main()
+{ 
+  int row,col,sp=-1;
+   for(row=5;row>=1;row--)
+     {
+       for(col=1;col<=row;col++)
+         printf("*");
+         
+       for(col=1;col<=sp;col++)
+         printf(" ");
+         
+       for(col=1;col<=row;col++)
+         printf(" "); 
+         
+         printf("\n");
+         sp=sp+2;
+      }
+}
+/*
+Output:-
+bcs@PRATHAMA:~$ gcc pattern5.c
+bcs@PRATHAMA:~$ ./a.out
+*****     
+****     
+***      
+**       
+*        
+*/
