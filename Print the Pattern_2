@@ -1,0 +1,36 @@
+//Print the Pattern_2...
+#include<stdio.h>
+int main()
+{ 
+  int row,col;
+   for(row=1;row<=5;row++)
+     {
+       for(col=row;col<=5;col++)
+       {
+         printf("%d",col);
+       } 
+         printf("\n");
+     }
+    for(row=4;row>=1;row--)
+     {
+       for(col=row;col<=5;col++)
+       {
+         printf("%d",col);
+       } 
+         printf("\n");
+      }
+}
+/*
+Output:-
+bcs@PRATHAMA:~$ gcc pattern2.c
+bcs@PRATHAMA:~$ ./a.out
+12345
+2345
+345
+45
+5
+45
+345
+2345
+12345
+*/
