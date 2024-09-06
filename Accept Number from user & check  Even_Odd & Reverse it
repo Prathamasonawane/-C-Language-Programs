@@ -1,0 +1,48 @@
+#include<stdio.h>
+void main()
+{
+  int num;
+  void check_even(int);
+  void cube(int);
+  void reverse(int);
+  
+  printf("Enter Number:");
+   scanf("%d",&num);
+   
+   check_even(num);
+   cube(num);
+   reverse(num);
+}
+void check_even(int n)
+{
+ if(n%2==0)
+   printf("Number is Even..");
+ else
+   printf("Number is Odd..");
+}
+void cube(int n)
+{
+  int c;
+  c=n*n*n;
+  printf("\n Cube=%d",c);
+}
+void reverse(int n)
+{
+  int r=0,d;
+    while(n>0)
+     {
+       d=n%10;
+       r=r*10+d;
+       n=n/10;
+     }
+     printf("\n Reverse no=%d",r);
+}
+/*
+Output:-
+bcs@PRATHAMA:~$ gcc sum.c
+bcs@PRATHAMA:~$ ./a.out
+Enter Number:54
+Number is Even..
+ Cube=157464
+ Reverse no=45
+ */  
