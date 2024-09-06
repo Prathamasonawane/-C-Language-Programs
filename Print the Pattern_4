@@ -1,0 +1,24 @@
+//Print the Pattern_4...
+#include<stdio.h>
+int main()
+{ 
+  int row,col;
+   for(row=1;row<=5;row++)
+     {
+       for(col=1;col<=row;col++)
+       {
+         printf("\t%d",col%2);
+       }
+         printf("\n");
+      }
+}
+/*
+Output:-
+bcs@PRATHAMA:~$ gcc pattern4.c
+bcs@PRATHAMA:~$ ./a.out
+	1
+	1	0
+	1	0	1
+	1	0	1	0
+	1	0	1	0	1
+*/
