@@ -1,0 +1,28 @@
+//Print the Pattern_6...
+#include<stdio.h>
+int main()
+{ 
+  int row,col;
+   for(row=5;row>=1;row--)
+     {
+       for(col=5;col>=1;col--)
+        {
+         if(row<=col)
+           printf("%d",col);
+         else
+           printf("%d",row);
+	}
+         
+         printf("\n");
+      }
+}
+/*
+Output:-
+bcs@PRATHAMA:~$ gcc pattern6.c
+bcs@PRATHAMA:~$ ./a.out
+55555
+54444
+54333
+54322
+54321
+*/
